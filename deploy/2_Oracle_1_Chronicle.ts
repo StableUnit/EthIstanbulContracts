@@ -34,6 +34,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     const suAccessControlSingleton = (await ethers.getContract("SuAccessControlSingleton")) as SuAccessControlSingleton;
     await deployProxy("SuChronicleOracle", [suAccessControlSingleton.address]);
     const oracleContract = (await ethers.getContract("SuChronicleOracle", deployer)) as SuChronicleOracle;
+    // Need to have access to latestRoundData() in feed
     const selfKisser = await ethers.getContractAt(SELF_KISSER_ABI, '0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d', deployer);
 
     for (const asset of assets) {

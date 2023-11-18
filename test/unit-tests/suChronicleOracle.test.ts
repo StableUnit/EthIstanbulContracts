@@ -3,7 +3,7 @@ import { expect } from "chai";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 
 import {SuChronicleOracle } from "../../typechain-types";
-import {BN_1E18, BN_1E6, BN_1E8} from "../test-utils";
+import {BN_1E18} from "../test-utils";
 import {ConstantsType, getConstants} from "../../utils/constants";
 import {getNetworkInfo} from "../../utils/network";
 

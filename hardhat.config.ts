@@ -83,6 +83,12 @@ const config: HardhatUserConfig = {
                 url: `https://sepolia.infura.io/v3/${INFURA_API_KEY}`,
                 blockNumber: 4719230,
             },
+            // Fork of MAINNET
+            // chainId: 1,
+            // forking: {
+            //     url: `https://mainnet.infura.io/v3/${INFURA_API_KEY}`,
+            //     blockNumber: 18601800,
+            // }
         },
         sepolia: {
             url: `https://sepolia.infura.io/v3/${INFURA_API_KEY}`,

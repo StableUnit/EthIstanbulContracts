@@ -2,7 +2,7 @@
 /.vscode/
 
 node_modules
-
+typechain-types/
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,solidity
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,solidity

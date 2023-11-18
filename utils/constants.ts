@@ -36,8 +36,13 @@ export const getMockConfig = async (networkName: NetworkNameType) => {
 
 export const SEPOLIA = {
     USDT: {
+        address: "0xa1d7f71cbbb361a77820279958bac38fc3667c1a",
+        chroniclePriceFeed: "0xF78A4e093Cd2D9F57Bb363Cc4edEBcf9bF3325ba",
+        decimals: 18,
+    },
+    DAI: {
         address: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-        chroniclePriceFeed: "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419",
+        chroniclePriceFeed: "0x16984396EE0903782Ba8e6ebfA7DD356B0cA3841",
         decimals: 18,
     },
     ETH: {
@@ -45,13 +50,23 @@ export const SEPOLIA = {
         chroniclePriceFeed: "0x90430C5b8045a1E2A0Fc4e959542a0c75b576439",
         decimals: 18,
     },
-    AAVE_POOL_ADDRESS: "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+    SELF_KISSER: '0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d',
+};
+
+export const MAINNET = {
+    ETH: {
+        address: ADDRESS_ZERO,
+        chroniclePriceFeed: "0x64DE91F5A373Cd4c28de3600cB34C7C6cE410C85",
+        decimals: 18,
+    },
+    SELF_KISSER: '',
 };
 
 export const getConstants = (networkName: NetworkNameType) => {
     switch (networkName) {
-        case "localhost":
         case "mainnet":
+            return MAINNET;
+        case "localhost":
         case "sepolia":
         default:
             return SEPOLIA;
