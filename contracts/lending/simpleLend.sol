@@ -1,12 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./IERC20.sol";
-import "./Uniswap.sol";
-
 contract SimpleAMM {
     IERC20 public erc20Token;
     address public eth = address(0);
+
+    error WrongAssumption();
 
     struct LendingPool {
         bool isEnabled;
@@ -23,7 +22,7 @@ contract SimpleAMM {
     }
     
     mapping (uint256 => LendingPool) public pools; // pool id,
-    public uint256 newPoolId;
+    uint256 public totalNumberOfPools;
 
     // Constructor to initialize the ERC20 token address
     constructor(address _erc20Address) {
@@ -41,8 +40,8 @@ contract SimpleAMM {
     function borrow (
         address collatrealToken, 
         address memecoin,
-        uint256 amountOfCollatrealToDeposit
-        uint256 amountOfMemecoinToBorrow, 
+        uint256 amountOfCollatrealToDeposit,
+        uint256 amountOfMemecoinToBorrow
     ) public {
 
     }
@@ -74,22 +73,30 @@ contract SimpleAMM {
         address collatrealToken, 
         address memecoin
     ) public returns (uint256) {
-        pools[newPoolId] = new LendingPool({
-
-        })
-        newPoolId = newPoolId + 1;
+        pools[totalNumberOfPools] = LendingPool({
+            isEnabled: true,
+            collatrealToken: collatrealToken,
+            memecoin: memecoin,
+            amountOfCollateral: 0,
+            amountOfMemecoin: 0,
+            interestRate1e18: 0
+        });
+        totalNumberOfPools = totalNumberOfPools + 1;
     }
 
 
 
     // Check for under-collateralized loans
-    function checkForLiquidation(uint256 loanID) public {
+    function CheckHealthFactor(uint256 loanID) public returns (uint256) {
         // Logic to check and trigger liquidation
+        return 0;
     }
 
     // Liquidate using Uniswap
-    function liquidateUsingUniswap(...) public {
-        // Interact with Uniswap contract
+    function triggerLiquidation(uint256 loanId) public {
+        if (CheckHealthFactor(loanId) > 1e18) revert WrongAssumption();
+
+        
     }
 
     // Additional functions for administration and governance
