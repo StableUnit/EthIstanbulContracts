@@ -156,6 +156,7 @@ const config: HardhatUserConfig = {
             goerli: ETHERSCAN_API_KEY,
             polygon: POLYGONSCAN_API_KEY,
             polygonMumbai: POLYGONSCAN_API_KEY,
+            polygonZK: POLYGONSCAN_API_KEY,
             chiliz: CHILIZ_API_KEY,
         },
     },

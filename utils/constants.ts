@@ -22,9 +22,7 @@ export const getMockAddress = async (name: string) => {
 
 export const MOCK_TOKENS = ["MockSHIB", "ETH"];
 
-export const getMockConfig = async (networkName: NetworkNameType) => {
-    if (networkName !== "localhost") return undefined;
-
+export const getMockConfig = async () => {
     return [
         {
             name: "ETH",
