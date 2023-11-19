@@ -2,6 +2,17 @@
 
 // abstract and link for hackathon submission tba
 
+## Deploys
+
+### polygonZK addresses
+**lend** 0x2a958EFb0dCd381c036675D564c08eB1909C38AC
+
+**oracle** 0x97eaA69F210426eaC3A391d6d4377cfe85443494
+
+**oracleAggregator** 0xDF2e747Ae22Ea80B5f6C8f8BA8FDC2FAAC996762
+
+**accessControlSingleton** 0x708071C080E5ceb3cc0fb8fb4fD1034766eAef24
+
 # Lending Protocol Specification
 
 ## Overview

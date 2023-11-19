@@ -22,7 +22,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     accounts.forEach((account) => console.log(account.address));
 });
 
-const { INFURA_API_KEY, ETHERSCAN_API_KEY, POLYGONSCAN_API_KEY, CHILIZ_API_KEY, ARBISCAN_API_KEY } = process.env;
+const { INFURA_API_KEY, ETHERSCAN_API_KEY, POLYGONSCAN_API_KEY, CELO_API_KEY, ARBISCAN_API_KEY } = process.env;
 
 const accountsTestnet = [
     process.env.PRIVATE_KEY_TESTNET_DEPLOYER,
