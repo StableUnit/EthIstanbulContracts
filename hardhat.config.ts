@@ -104,6 +104,26 @@ const config: HardhatUserConfig = {
             chainId: 88882,
             accounts: accountsTestnet,
         },
+        neon: {
+            url: 'https://proxy.devnet.neonlabs.org/solana',
+            chainId: 245022926,
+            accounts: accountsTestnet,
+        },
+        polygonZK: {
+            url: 'https://polygon-zkevm.drpc.org',
+            chainId: 1101,
+            accounts: accountsTestnet,
+        },
+        arbitrum: {
+            url: 'https://arbitrum.llamarpc.com',
+            chainId: 42161,
+            accounts: accountsTestnet,
+        },
+        celo: {
+            url: "https://alfajores-forno.celo-testnet.org",
+            chainId: 44787,
+            accounts: accountsTestnet,
+        },
         goerli: {
             url: `https://goerli.infura.io/v3/${INFURA_API_KEY}`,
             accounts: accountsTestnet,
