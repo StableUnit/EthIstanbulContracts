@@ -59,6 +59,16 @@
 
 **oracleAggregator** 0xDF2e747Ae22Ea80B5f6C8f8BA8FDC2FAAC996762
 
+### Mantle addresses
+**lend** 0x2a958EFb0dCd381c036675D564c08eB1909C38AC
+
+**oracle** 0x97eaA69F210426eaC3A391d6d4377cfe85443494
+
+**shib** 0x7a1adc8340C00AA3Ecdd4Ecf36182Eed5D1BAb0B
+
+**accessControlSingleton** 0x708071C080E5ceb3cc0fb8fb4fD1034766eAef24
+
+**oracleAggregator** 0xDF2e747Ae22Ea80B5f6C8f8BA8FDC2FAAC996762
 
 # Lending Protocol Specification
 

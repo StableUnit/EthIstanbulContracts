@@ -105,7 +105,7 @@ const config: HardhatUserConfig = {
             accounts: accountsTestnet,
         },
         neon: {
-            url: 'https://proxy.devnet.neonlabs.org/solana',
+            url: 'https://devnet.neonevm.org',
             chainId: 245022926,
             accounts: accountsTestnet,
         },
@@ -122,6 +122,11 @@ const config: HardhatUserConfig = {
         celo: {
             url: "https://alfajores-forno.celo-testnet.org",
             chainId: 44787,
+            accounts: accountsTestnet,
+        },
+        mantle: {
+            url: "https://rpc.testnet.mantle.xyz/",
+            chainId: 5001,
             accounts: accountsTestnet,
         },
         goerli: {
