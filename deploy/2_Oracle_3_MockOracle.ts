@@ -19,6 +19,7 @@ const func: hardhatDeployTypes.DeployFunction = async (hre: typechainTypes.Hardh
     await deployments.deploy("MockOracle", deployOptions);
 
     const mockOracle = (await ethers.getContract("MockOracle")) as MockOracle;
+    await deployments.deploy("MockSHIB", { from: deployer });
     const config = await getMockConfig(networkName);
 
     for (const asset of config) {

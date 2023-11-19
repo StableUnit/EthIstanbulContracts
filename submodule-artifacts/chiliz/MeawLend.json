@@ -1,0 +1,333 @@
+{
+  "address": "0x4274163619a3E4EA3C310a93C4B2f827F07FC5a4",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_erc20Token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_uniswapRouter",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_priceFeed",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "borrowToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "depositCollateral",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "erc20Token",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "borrower",
+          "type": "address"
+        }
+      ],
+      "name": "liquidateLoan",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "loans",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "ethCollateral",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenDebt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastBorrowTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceFeed",
+      "outputs": [
+        {
+          "internalType": "contract AggregatorV3Interface",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "repayLoanAndWithdraw",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalBorrowed",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalDeposits",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "uniswapRouter",
+      "outputs": [
+        {
+          "internalType": "contract IUniswapV2Router02",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x081a6d6c7a4d173fe4f2956ea4b3598e63e8b5739783a1b83cda556a6bb21684",
+  "receipt": {
+    "to": null,
+    "from": "0x2b8DC2cc8D545Bc9E5a2015c8eCfC5dc74316477",
+    "contractAddress": "0x4274163619a3E4EA3C310a93C4B2f827F07FC5a4",
+    "transactionIndex": 0,
+    "gasUsed": "830895",
+    "logsBloom": "0x08000000000000000000000000000010000010000010000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xc3d1eb82d8d526bab2d7dc7e87035aa75e4c93abfaeda7dd95a48e357ad44138",
+    "transactionHash": "0x081a6d6c7a4d173fe4f2956ea4b3598e63e8b5739783a1b83cda556a6bb21684",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 8957170,
+        "transactionHash": "0x081a6d6c7a4d173fe4f2956ea4b3598e63e8b5739783a1b83cda556a6bb21684",
+        "address": "0x0000000000000000000000000000000000007005",
+        "topics": [
+          "0x33c981baba081f8fd2c52ac6ad1ea95b6814b4376640f55689051f6584729688",
+          "0x0000000000000000000000002b8dc2cc8d545bc9e5a2015c8ecfc5dc74316477"
+        ],
+        "data": "0x0000000000000000000000004274163619a3e4ea3c310a93c4b2f827f07fc5a4",
+        "logIndex": 0,
+        "blockHash": "0xc3d1eb82d8d526bab2d7dc7e87035aa75e4c93abfaeda7dd95a48e357ad44138"
+      }
+    ],
+    "blockNumber": 8957170,
+    "cumulativeGasUsed": "830895",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x43bf5867544FebB4E89139b01ef15DCbC9E5A674",
+    "0x0000000000000000000000000000000000000000",
+    "0x7a1adc8340C00AA3Ecdd4Ecf36182Eed5D1BAb0B"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "40ee17c4e9aaddf693bbe94a644445b8",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_erc20Token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_uniswapRouter\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_priceFeed\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenAmount\",\"type\":\"uint256\"}],\"name\":\"borrowToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"depositCollateral\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"erc20Token\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"borrower\",\"type\":\"address\"}],\"name\":\"liquidateLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"loans\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"ethCollateral\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenDebt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lastBorrowTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceFeed\",\"outputs\":[{\"internalType\":\"contract AggregatorV3Interface\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenAmount\",\"type\":\"uint256\"}],\"name\":\"repayLoanAndWithdraw\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalBorrowed\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalDeposits\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"uniswapRouter\",\"outputs\":[{\"internalType\":\"contract IUniswapV2Router02\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/lending/MeawLend.sol\":\"MeawLend\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\ninterface AggregatorV3Interface {\\n  function decimals() external view returns (uint8);\\n\\n  function description() external view returns (string memory);\\n\\n  function version() external view returns (uint256);\\n\\n  function getRoundData(uint80 _roundId)\\n    external\\n    view\\n    returns (\\n      uint80 roundId,\\n      int256 answer,\\n      uint256 startedAt,\\n      uint256 updatedAt,\\n      uint80 answeredInRound\\n    );\\n\\n  function latestRoundData()\\n    external\\n    view\\n    returns (\\n      uint80 roundId,\\n      int256 answer,\\n      uint256 startedAt,\\n      uint256 updatedAt,\\n      uint80 answeredInRound\\n    );\\n}\\n\",\"keccak256\":\"0x6e6e4b0835904509406b070ee173b5bc8f677c19421b76be38aea3b1b3d30846\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/math/SafeMath.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (utils/math/SafeMath.sol)\\n\\npragma solidity ^0.8.0;\\n\\n// CAUTION\\n// This version of SafeMath should only be used with Solidity 0.8 or later,\\n// because it relies on the compiler's built in overflow checks.\\n\\n/**\\n * @dev Wrappers over Solidity's arithmetic operations.\\n *\\n * NOTE: `SafeMath` is generally not needed starting with Solidity 0.8, since the compiler\\n * now has built in overflow checking.\\n */\\nlibrary SafeMath {\\n    /**\\n     * @dev Returns the addition of two unsigned integers, with an overflow flag.\\n     *\\n     * _Available since v3.4._\\n     */\\n    function tryAdd(uint256 a, uint256 b) internal pure returns (bool, uint256) {\\n        unchecked {\\n            uint256 c = a + b;\\n            if (c < a) return (false, 0);\\n            return (true, c);\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the subtraction of two unsigned integers, with an overflow flag.\\n     *\\n     * _Available since v3.4._\\n     */\\n    function trySub(uint256 a, uint256 b) internal pure returns (bool, uint256) {\\n        unchecked {\\n            if (b > a) return (false, 0);\\n            return (true, a - b);\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the multiplication of two unsigned integers, with an overflow flag.\\n     *\\n     * _Available since v3.4._\\n     */\\n    function tryMul(uint256 a, uint256 b) internal pure returns (bool, uint256) {\\n        unchecked {\\n            // Gas optimization: this is cheaper than requiring 'a' not being zero, but the\\n            // benefit is lost if 'b' is also tested.\\n            // See: https://github.com/OpenZeppelin/openzeppelin-contracts/pull/522\\n            if (a == 0) return (true, 0);\\n            uint256 c = a * b;\\n            if (c / a != b) return (false, 0);\\n            return (true, c);\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the division of two unsigned integers, with a division by zero flag.\\n     *\\n     * _Available since v3.4._\\n     */\\n    function tryDiv(uint256 a, uint256 b) internal pure returns (bool, uint256) {\\n        unchecked {\\n            if (b == 0) return (false, 0);\\n            return (true, a / b);\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the remainder of dividing two unsigned integers, with a division by zero flag.\\n     *\\n     * _Available since v3.4._\\n     */\\n    function tryMod(uint256 a, uint256 b) internal pure returns (bool, uint256) {\\n        unchecked {\\n            if (b == 0) return (false, 0);\\n            return (true, a % b);\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the addition of two unsigned integers, reverting on\\n     * overflow.\\n     *\\n     * Counterpart to Solidity's `+` operator.\\n     *\\n     * Requirements:\\n     *\\n     * - Addition cannot overflow.\\n     */\\n    function add(uint256 a, uint256 b) internal pure returns (uint256) {\\n        return a + b;\\n    }\\n\\n    /**\\n     * @dev Returns the subtraction of two unsigned integers, reverting on\\n     * overflow (when the result is negative).\\n     *\\n     * Counterpart to Solidity's `-` operator.\\n     *\\n     * Requirements:\\n     *\\n     * - Subtraction cannot overflow.\\n     */\\n    function sub(uint256 a, uint256 b) internal pure returns (uint256) {\\n        return a - b;\\n    }\\n\\n    /**\\n     * @dev Returns the multiplication of two unsigned integers, reverting on\\n     * overflow.\\n     *\\n     * Counterpart to Solidity's `*` operator.\\n     *\\n     * Requirements:\\n     *\\n     * - Multiplication cannot overflow.\\n     */\\n    function mul(uint256 a, uint256 b) internal pure returns (uint256) {\\n        return a * b;\\n    }\\n\\n    /**\\n     * @dev Returns the integer division of two unsigned integers, reverting on\\n     * division by zero. The result is rounded towards zero.\\n     *\\n     * Counterpart to Solidity's `/` operator.\\n     *\\n     * Requirements:\\n     *\\n     * - The divisor cannot be zero.\\n     */\\n    function div(uint256 a, uint256 b) internal pure returns (uint256) {\\n        return a / b;\\n    }\\n\\n    /**\\n     * @dev Returns the remainder of dividing two unsigned integers. (unsigned integer modulo),\\n     * reverting when dividing by zero.\\n     *\\n     * Counterpart to Solidity's `%` operator. This function uses a `revert`\\n     * opcode (which leaves remaining gas untouched) while Solidity uses an\\n     * invalid opcode to revert (consuming all remaining gas).\\n     *\\n     * Requirements:\\n     *\\n     * - The divisor cannot be zero.\\n     */\\n    function mod(uint256 a, uint256 b) internal pure returns (uint256) {\\n        return a % b;\\n    }\\n\\n    /**\\n     * @dev Returns the subtraction of two unsigned integers, reverting with custom message on\\n     * overflow (when the result is negative).\\n     *\\n     * CAUTION: This function is deprecated because it requires allocating memory for the error\\n     * message unnecessarily. For custom revert reasons use {trySub}.\\n     *\\n     * Counterpart to Solidity's `-` operator.\\n     *\\n     * Requirements:\\n     *\\n     * - Subtraction cannot overflow.\\n     */\\n    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {\\n        unchecked {\\n            require(b <= a, errorMessage);\\n            return a - b;\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the integer division of two unsigned integers, reverting with custom message on\\n     * division by zero. The result is rounded towards zero.\\n     *\\n     * Counterpart to Solidity's `/` operator. Note: this function uses a\\n     * `revert` opcode (which leaves remaining gas untouched) while Solidity\\n     * uses an invalid opcode to revert (consuming all remaining gas).\\n     *\\n     * Requirements:\\n     *\\n     * - The divisor cannot be zero.\\n     */\\n    function div(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {\\n        unchecked {\\n            require(b > 0, errorMessage);\\n            return a / b;\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the remainder of dividing two unsigned integers. (unsigned integer modulo),\\n     * reverting with custom message when dividing by zero.\\n     *\\n     * CAUTION: This function is deprecated because it requires allocating memory for the error\\n     * message unnecessarily. For custom revert reasons use {tryMod}.\\n     *\\n     * Counterpart to Solidity's `%` operator. This function uses a `revert`\\n     * opcode (which leaves remaining gas untouched) while Solidity uses an\\n     * invalid opcode to revert (consuming all remaining gas).\\n     *\\n     * Requirements:\\n     *\\n     * - The divisor cannot be zero.\\n     */\\n    function mod(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {\\n        unchecked {\\n            require(b > 0, errorMessage);\\n            return a % b;\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x58b21219689909c4f8339af00813760337f7e2e7f169a97fe49e2896dcfb3b9a\",\"license\":\"MIT\"},\"contracts/lending/MeawLend.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\nimport \\\"@openzeppelin/contracts/utils/math/SafeMath.sol\\\";\\nimport \\\"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol\\\";\\n\\ninterface IUniswapV2Router02 {\\n    function WETH() external pure returns (address);\\n    function swapExactETHForTokens(\\n        uint amountOutMin, \\n        address[] calldata path, \\n        address to, \\n        uint deadline\\n    ) external payable returns (uint[] memory amounts);\\n}\\n\\ncontract MeawLend {\\n    using SafeMath for uint256;\\n\\n    IERC20 public erc20Token;\\n    IUniswapV2Router02 public uniswapRouter;\\n    AggregatorV3Interface public priceFeed;\\n\\n    uint256 public totalDeposits;\\n    uint256 public totalBorrowed;\\n    uint256 private constant LTV_RATIO = 50; // 50%\\n    uint256 private constant MINIMUM_LOAN_SIZE = 1 ether; // Minimum ETH collateral for a loan\\n    uint256 private constant LIQUIDATION_INCENTIVE = 5; // 5% of collateral\\n\\n    struct Loan {\\n        uint256 ethCollateral;\\n        uint256 tokenDebt;\\n        uint256 lastBorrowTime;\\n    }\\n\\n    mapping(address => Loan) public loans;\\n\\n    constructor(address _erc20Token, address _uniswapRouter, address _priceFeed) {\\n        erc20Token = IERC20(_erc20Token);\\n        uniswapRouter = IUniswapV2Router02(_uniswapRouter);\\n        priceFeed = AggregatorV3Interface(_priceFeed);\\n    }\\n\\n    function depositCollateral() external payable {\\n        require(msg.value >= MINIMUM_LOAN_SIZE, \\\"Collateral below minimum size\\\");\\n        Loan storage loan = loans[msg.sender];\\n        loan.ethCollateral = loan.ethCollateral.add(msg.value);\\n        totalDeposits = totalDeposits.add(msg.value);\\n    }\\n\\n    function borrowToken(uint256 tokenAmount) external {\\n        Loan storage loan = loans[msg.sender];\\n        uint256 maxBorrow = loan.ethCollateral.mul(LTV_RATIO).div(100);\\n        require(tokenAmount <= maxBorrow, \\\"Amount exceeds maximum borrowable\\\");\\n        \\n        loan.tokenDebt = loan.tokenDebt.add(tokenAmount);\\n        loan.lastBorrowTime = block.timestamp;\\n        totalBorrowed = totalBorrowed.add(tokenAmount);\\n        \\n        erc20Token.transfer(msg.sender, tokenAmount);\\n    }\\n\\n    function repayLoanAndWithdraw(uint256 tokenAmount) external payable {\\n        Loan storage loan = loans[msg.sender];\\n        require(tokenAmount == loan.tokenDebt, \\\"Must repay exact loan amount\\\");\\n\\n        uint256 interestInEth = calculateInterest(loan.tokenDebt, loan.lastBorrowTime);\\n        require(msg.value >= interestInEth, \\\"Insufficient ETH for interest\\\");\\n\\n        erc20Token.transferFrom(msg.sender, address(this), tokenAmount);\\n        uint256 ethRefund = loan.ethCollateral.sub(interestInEth);\\n        payable(msg.sender).transfer(ethRefund);\\n\\n        loan.ethCollateral = 0;\\n        loan.tokenDebt = 0;\\n        totalBorrowed = totalBorrowed.sub(tokenAmount);\\n    }\\n\\n    function liquidateLoan(address borrower) external {\\n        Loan storage loan = loans[borrower];\\n        require(isUnderCollateralized(borrower), \\\"Loan is not eligible for liquidation\\\");\\n\\n        uint256 ethAmount = loan.ethCollateral;\\n        uint256 incentiveAmount = ethAmount.mul(LIQUIDATION_INCENTIVE).div(100);\\n        uint256 swapAmount = ethAmount.sub(incentiveAmount);\\n\\n        payable(msg.sender).transfer(incentiveAmount); // Send incentive to liquidator\\n\\n        address[] memory path = new address[](2);\\n        path[0] = uniswapRouter.WETH();\\n        path[1] = address(erc20Token);\\n\\n        uniswapRouter.swapExactETHForTokens{value: swapAmount}(\\n            0, // accept any amount of ERC20 tokens\\n            path,\\n            address(this),\\n            block.timestamp + 15 minutes\\n        );\\n\\n        loan.ethCollateral = 0;\\n        loan.tokenDebt = 0;\\n    }\\n\\n    function calculateInterest(uint256 tokenDebt, uint256 lastBorrowTime) private view returns (uint256) {\\n        uint256 interestRate = calculateInterestRate();\\n        uint256 duration = block.timestamp.sub(lastBorrowTime);\\n        uint256 tokenPrice = getTokenPrice();\\n        uint256 interest = tokenDebt.mul(interestRate).mul(duration).div(365 days).div(100);\\n        return interest.mul(tokenPrice);\\n    }\\n\\n    function calculateInterestRate() private view returns (uint256) {\\n        uint256 utilization = totalBorrowed.mul(100).div(totalDeposits);\\n        // Implement your interest rate model here\\n        return utilization; // Example: 1% for each 1% utilization\\n    }\\n\\n    function isUnderCollateralized(address borrower) private view returns (bool) {\\n        Loan memory loan = loans[borrower];\\n        uint256 tokenPrice = getTokenPrice();\\n        uint256 collateralValue = loan.ethCollateral.mul(tokenPrice);\\n        return collateralValue < loan.tokenDebt.mul(LTV_RATIO).div(100);\\n    }\\n\\n    function getTokenPrice() private view returns (uint256) {\\n        // Implement logic to get the current price of the ERC20 token\\n        // Example: using Chainlink Price Feed\\n        (,int256 price,,,) = priceFeed.latestRoundData();\\n        return uint256(price);\\n    }\\n}\\n\",\"keccak256\":\"0x36fc008d53da6bdfdde848c78b43d0173f2df12bd1e3be9e5eeefd4b94c4be58\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50604051610d2a380380610d2a83398101604081905261002f9161008d565b600080546001600160a01b039485166001600160a01b0319918216179091556001805493851693821693909317909255600280549190931691161790556100d0565b80516001600160a01b038116811461008857600080fd5b919050565b6000806000606084860312156100a257600080fd5b6100ab84610071565b92506100b960208501610071565b91506100c760408501610071565b90509250925092565b610c4b806100df6000396000f3fe6080604052600436106100815760003560e01c8063044c023b14610086578063092f57761461009b5780634c19386c146100bb5780636f758140146100e4578063735de9f7146100ec57806373b4086b14610124578063741bef1a1461017b5780637d8820971461019b5780638a13eea7146101b1578063bbdfa00e146101d1575b600080fd5b610099610094366004610954565b6101f1565b005b3480156100a757600080fd5b506100996100b6366004610954565b610399565b3480156100c757600080fd5b506100d160045481565b6040519081526020015b60405180910390f35b6100996104c8565b3480156100f857600080fd5b5060015461010c906001600160a01b031681565b6040516001600160a01b0390911681526020016100db565b34801561013057600080fd5b5061016061013f366004610985565b60056020526000908152604090208054600182015460029092015490919083565b604080519384526020840192909252908201526060016100db565b34801561018757600080fd5b5060025461010c906001600160a01b031681565b3480156101a757600080fd5b506100d160035481565b3480156101bd57600080fd5b5060005461010c906001600160a01b031681565b3480156101dd57600080fd5b506100996101ec366004610985565b610550565b336000908152600560205260409020600181015482146102575760405162461bcd60e51b815260206004820152601c60248201527b135d5cdd081c995c185e48195e1858dd081b1bd85b88185b5bdd5b9d60221b60448201526064015b60405180910390fd5b600061026b8260010154836002015461079a565b9050803410156102bd5760405162461bcd60e51b815260206004820152601d60248201527f496e73756666696369656e742045544820666f7220696e746572657374000000604482015260640161024e565b6000546040516323b872dd60e01b8152336004820152306024820152604481018590526001600160a01b03909116906323b872dd906064016020604051808303816000875af1158015610314573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061033891906109a2565b50815460009061034890836107fb565b604051909150339082156108fc029083906000818181858888f19350505050158015610378573d6000803e3d6000fd5b506000808455600184015560045461039090856107fb565b60045550505050565b33600090815260056020526040812080549091906103c5906064906103bf90603261080e565b9061081a565b9050808311156104215760405162461bcd60e51b815260206004820152602160248201527f416d6f756e742065786365656473206d6178696d756d20626f72726f7761626c6044820152606560f81b606482015260840161024e565b60018201546104309084610826565b60018301554260028301556004546104489084610826565b600490815560005460405163a9059cbb60e01b81523392810192909252602482018590526001600160a01b03169063a9059cbb906044016020604051808303816000875af115801561049e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104c291906109a2565b50505050565b670de0b6b3a76400003410156105205760405162461bcd60e51b815260206004820152601d60248201527f436f6c6c61746572616c2062656c6f77206d696e696d756d2073697a65000000604482015260640161024e565b336000908152600560205260409020805461053b9034610826565b815560035461054a9034610826565b60035550565b6001600160a01b038116600090815260056020526040902061057182610832565b6105c95760405162461bcd60e51b8152602060048201526024808201527f4c6f616e206973206e6f7420656c696769626c6520666f72206c6971756964616044820152633a34b7b760e11b606482015260840161024e565b805460006105dd60646103bf84600561080e565b905060006105eb83836107fb565b604051909150339083156108fc029084906000818181858888f1935050505015801561061b573d6000803e3d6000fd5b506040805160028082526060820183526000926020830190803683375050600154604080516315ab88c960e31b815290519394506001600160a01b039091169263ad5c4648925060048083019260209291908290030181865afa158015610686573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106aa91906109da565b816000815181106106bd576106bd6109f7565b6001600160a01b0392831660209182029290920101526000548251911690829060019081106106ee576106ee6109f7565b6001600160a01b03928316602091820292909201015260015416637ff36ab5836000843061071e42610384610a23565b6040518663ffffffff1660e01b815260040161073d9493929190610a36565b60006040518083038185885af115801561075b573d6000803e3d6000fd5b50505050506040513d6000823e601f3d908101601f191682016040526107849190810190610aa0565b5050600080855560019094019390935550505050565b6000806107a56108b0565b905060006107b342856107fb565b905060006107bf6108cf565b905060006107e260646103bf6301e1338081876107dc8d8b61080e565b9061080e565b90506107ee818361080e565b9450505050505b92915050565b60006108078284610b5d565b9392505050565b60006108078284610b70565b60006108078284610b87565b60006108078284610a23565b6001600160a01b03811660009081526005602090815260408083208151606081018352815481526001820154938101939093526002015490820152816108766108cf565b8251909150600090610888908361080e565b90506108a760646103bf6032866020015161080e90919063ffffffff16565b11949350505050565b6000806107f56003546103bf606460045461080e90919063ffffffff16565b600080600260009054906101000a90046001600160a01b03166001600160a01b031663feaf968c6040518163ffffffff1660e01b815260040160a060405180830381865afa158015610925573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109499190610bc5565b509195945050505050565b60006020828403121561096657600080fd5b5035919050565b6001600160a01b038116811461098257600080fd5b50565b60006020828403121561099757600080fd5b81356108078161096d565b6000602082840312156109b457600080fd5b8151801515811461080757600080fd5b634e487b7160e01b600052604160045260246000fd5b6000602082840312156109ec57600080fd5b81516108078161096d565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b808201808211156107f5576107f5610a0d565b600060808201868352602060808185015281875180845260a086019150828901935060005b81811015610a805784516001600160a01b031683529383019391830191600101610a5b565b50506001600160a01b039690961660408501525050506060015292915050565b60006020808385031215610ab357600080fd5b82516001600160401b0380821115610aca57600080fd5b818501915085601f830112610ade57600080fd5b815181811115610af057610af06109c4565b8060051b604051601f19603f83011681018181108582111715610b1557610b156109c4565b604052918252848201925083810185019188831115610b3357600080fd5b938501935b82851015610b5157845184529385019392850192610b38565b98975050505050505050565b818103818111156107f5576107f5610a0d565b80820281158282048414176107f5576107f5610a0d565b600082610ba457634e487b7160e01b600052601260045260246000fd5b500490565b80516001600160501b0381168114610bc057600080fd5b919050565b600080600080600060a08688031215610bdd57600080fd5b610be686610ba9565b9450602086015193506040860151925060608601519150610c0960808701610ba9565b9050929550929590935056fea2646970667358221220c3e0c21431c8a1f85d67f0468e21fe59eed0086ee0b1ca6e2e8facb881996b0864736f6c63430008110033",
+  "deployedBytecode": "0x6080604052600436106100815760003560e01c8063044c023b14610086578063092f57761461009b5780634c19386c146100bb5780636f758140146100e4578063735de9f7146100ec57806373b4086b14610124578063741bef1a1461017b5780637d8820971461019b5780638a13eea7146101b1578063bbdfa00e146101d1575b600080fd5b610099610094366004610954565b6101f1565b005b3480156100a757600080fd5b506100996100b6366004610954565b610399565b3480156100c757600080fd5b506100d160045481565b6040519081526020015b60405180910390f35b6100996104c8565b3480156100f857600080fd5b5060015461010c906001600160a01b031681565b6040516001600160a01b0390911681526020016100db565b34801561013057600080fd5b5061016061013f366004610985565b60056020526000908152604090208054600182015460029092015490919083565b604080519384526020840192909252908201526060016100db565b34801561018757600080fd5b5060025461010c906001600160a01b031681565b3480156101a757600080fd5b506100d160035481565b3480156101bd57600080fd5b5060005461010c906001600160a01b031681565b3480156101dd57600080fd5b506100996101ec366004610985565b610550565b336000908152600560205260409020600181015482146102575760405162461bcd60e51b815260206004820152601c60248201527b135d5cdd081c995c185e48195e1858dd081b1bd85b88185b5bdd5b9d60221b60448201526064015b60405180910390fd5b600061026b8260010154836002015461079a565b9050803410156102bd5760405162461bcd60e51b815260206004820152601d60248201527f496e73756666696369656e742045544820666f7220696e746572657374000000604482015260640161024e565b6000546040516323b872dd60e01b8152336004820152306024820152604481018590526001600160a01b03909116906323b872dd906064016020604051808303816000875af1158015610314573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061033891906109a2565b50815460009061034890836107fb565b604051909150339082156108fc029083906000818181858888f19350505050158015610378573d6000803e3d6000fd5b506000808455600184015560045461039090856107fb565b60045550505050565b33600090815260056020526040812080549091906103c5906064906103bf90603261080e565b9061081a565b9050808311156104215760405162461bcd60e51b815260206004820152602160248201527f416d6f756e742065786365656473206d6178696d756d20626f72726f7761626c6044820152606560f81b606482015260840161024e565b60018201546104309084610826565b60018301554260028301556004546104489084610826565b600490815560005460405163a9059cbb60e01b81523392810192909252602482018590526001600160a01b03169063a9059cbb906044016020604051808303816000875af115801561049e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104c291906109a2565b50505050565b670de0b6b3a76400003410156105205760405162461bcd60e51b815260206004820152601d60248201527f436f6c6c61746572616c2062656c6f77206d696e696d756d2073697a65000000604482015260640161024e565b336000908152600560205260409020805461053b9034610826565b815560035461054a9034610826565b60035550565b6001600160a01b038116600090815260056020526040902061057182610832565b6105c95760405162461bcd60e51b8152602060048201526024808201527f4c6f616e206973206e6f7420656c696769626c6520666f72206c6971756964616044820152633a34b7b760e11b606482015260840161024e565b805460006105dd60646103bf84600561080e565b905060006105eb83836107fb565b604051909150339083156108fc029084906000818181858888f1935050505015801561061b573d6000803e3d6000fd5b506040805160028082526060820183526000926020830190803683375050600154604080516315ab88c960e31b815290519394506001600160a01b039091169263ad5c4648925060048083019260209291908290030181865afa158015610686573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106aa91906109da565b816000815181106106bd576106bd6109f7565b6001600160a01b0392831660209182029290920101526000548251911690829060019081106106ee576106ee6109f7565b6001600160a01b03928316602091820292909201015260015416637ff36ab5836000843061071e42610384610a23565b6040518663ffffffff1660e01b815260040161073d9493929190610a36565b60006040518083038185885af115801561075b573d6000803e3d6000fd5b50505050506040513d6000823e601f3d908101601f191682016040526107849190810190610aa0565b5050600080855560019094019390935550505050565b6000806107a56108b0565b905060006107b342856107fb565b905060006107bf6108cf565b905060006107e260646103bf6301e1338081876107dc8d8b61080e565b9061080e565b90506107ee818361080e565b9450505050505b92915050565b60006108078284610b5d565b9392505050565b60006108078284610b70565b60006108078284610b87565b60006108078284610a23565b6001600160a01b03811660009081526005602090815260408083208151606081018352815481526001820154938101939093526002015490820152816108766108cf565b8251909150600090610888908361080e565b90506108a760646103bf6032866020015161080e90919063ffffffff16565b11949350505050565b6000806107f56003546103bf606460045461080e90919063ffffffff16565b600080600260009054906101000a90046001600160a01b03166001600160a01b031663feaf968c6040518163ffffffff1660e01b815260040160a060405180830381865afa158015610925573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109499190610bc5565b509195945050505050565b60006020828403121561096657600080fd5b5035919050565b6001600160a01b038116811461098257600080fd5b50565b60006020828403121561099757600080fd5b81356108078161096d565b6000602082840312156109b457600080fd5b8151801515811461080757600080fd5b634e487b7160e01b600052604160045260246000fd5b6000602082840312156109ec57600080fd5b81516108078161096d565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b808201808211156107f5576107f5610a0d565b600060808201868352602060808185015281875180845260a086019150828901935060005b81811015610a805784516001600160a01b031683529383019391830191600101610a5b565b50506001600160a01b039690961660408501525050506060015292915050565b60006020808385031215610ab357600080fd5b82516001600160401b0380821115610aca57600080fd5b818501915085601f830112610ade57600080fd5b815181811115610af057610af06109c4565b8060051b604051601f19603f83011681018181108582111715610b1557610b156109c4565b604052918252848201925083810185019188831115610b3357600080fd5b938501935b82851015610b5157845184529385019392850192610b38565b98975050505050505050565b818103818111156107f5576107f5610a0d565b80820281158282048414176107f5576107f5610a0d565b600082610ba457634e487b7160e01b600052601260045260246000fd5b500490565b80516001600160501b0381168114610bc057600080fd5b919050565b600080600080600060a08688031215610bdd57600080fd5b610be686610ba9565b9450602086015193506040860151925060608601519150610c0960808701610ba9565b9050929550929590935056fea2646970667358221220c3e0c21431c8a1f85d67f0468e21fe59eed0086ee0b1ca6e2e8facb881996b0864736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 6807,
+        "contract": "contracts/lending/MeawLend.sol:MeawLend",
+        "label": "erc20Token",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(IERC20)3642"
+      },
+      {
+        "astId": 6810,
+        "contract": "contracts/lending/MeawLend.sol:MeawLend",
+        "label": "uniswapRouter",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_contract(IUniswapV2Router02)6801"
+      },
+      {
+        "astId": 6813,
+        "contract": "contracts/lending/MeawLend.sol:MeawLend",
+        "label": "priceFeed",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_contract(AggregatorV3Interface)45"
+      },
+      {
+        "astId": 6815,
+        "contract": "contracts/lending/MeawLend.sol:MeawLend",
+        "label": "totalDeposits",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6817,
+        "contract": "contracts/lending/MeawLend.sol:MeawLend",
+        "label": "totalBorrowed",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 6838,
+        "contract": "contracts/lending/MeawLend.sol:MeawLend",
+        "label": "loans",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_mapping(t_address,t_struct(Loan)6833_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_contract(AggregatorV3Interface)45": {
+        "encoding": "inplace",
+        "label": "contract AggregatorV3Interface",
+        "numberOfBytes": "20"
+      },
+      "t_contract(IERC20)3642": {
+        "encoding": "inplace",
+        "label": "contract IERC20",
+        "numberOfBytes": "20"
+      },
+      "t_contract(IUniswapV2Router02)6801": {
+        "encoding": "inplace",
+        "label": "contract IUniswapV2Router02",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_struct(Loan)6833_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct MeawLend.Loan)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Loan)6833_storage"
+      },
+      "t_struct(Loan)6833_storage": {
+        "encoding": "inplace",
+        "label": "struct MeawLend.Loan",
+        "members": [
+          {
+            "astId": 6828,
+            "contract": "contracts/lending/MeawLend.sol:MeawLend",
+            "label": "ethCollateral",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 6830,
+            "contract": "contracts/lending/MeawLend.sol:MeawLend",
+            "label": "tokenDebt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 6832,
+            "contract": "contracts/lending/MeawLend.sol:MeawLend",
+            "label": "lastBorrowTime",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "96"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

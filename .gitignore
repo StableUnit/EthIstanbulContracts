@@ -152,7 +152,6 @@ dist
 #Hardhat files
 cache
 artifacts
-submodule-artifacts
 .gitsecret/keys/random_seed
 !*.secret
 

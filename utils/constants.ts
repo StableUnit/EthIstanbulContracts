@@ -16,20 +16,27 @@ export const SUPPORTED_TOKENS = ["ETH"];
 export const isNetworkSupported = (networkName: NetworkNameType) => ["sepolia", "mainnet", "localhost"].includes(networkName);
 
 export const getMockAddress = async (name: string) => {
+    if (name === 'ETH') return ADDRESS_ZERO;
     return (await ethers.getContract(name)).address;
 };
 
-export const MOCK_TOKENS = ["MockWBTC"];
+export const MOCK_TOKENS = ["MockSHIB", "ETH"];
 
 export const getMockConfig = async (networkName: NetworkNameType) => {
     if (networkName !== "localhost") return undefined;
 
     return [
         {
-            name: "MockWBTC",
-            address: await getMockAddress("MockWBTC"),
-            decimals: 8,
-            price: createBN1e18(20000),
+            name: "ETH",
+            address: ADDRESS_ZERO,
+            decimals: 18,
+            price: createBN1e18(1969),
+        },
+        {
+            name: "MockSHIB",
+            address: await getMockAddress("MockSHIB"),
+            decimals: 18,
+            price: createBN1e18(2, 14), // 0.0002
         },
     ];
 };

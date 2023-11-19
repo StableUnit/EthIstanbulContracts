@@ -1,0 +1,252 @@
+{
+  "address": "0x11F9724E795Ce0CD9E0366286eA45C1BC578E984",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "FIAT_NAME",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "getFiatPrice1e18",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "setFiatPrice1e18",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "prices",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "setFiatPrice1e18Array",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x3bec0da4c46446886692b765eef849329ef23db79d357d8ab50fe77a8906bc85",
+  "receipt": {
+    "to": null,
+    "from": "0x2b8DC2cc8D545Bc9E5a2015c8eCfC5dc74316477",
+    "contractAddress": "0x11F9724E795Ce0CD9E0366286eA45C1BC578E984",
+    "transactionIndex": 0,
+    "gasUsed": "459370",
+    "logsBloom": "0x08000000000000000000000000000010000010000010000000800000000000000000000000000000000000000010000000000000000800000000000000000000000000000000000000000000000000000025000000000000000000000000000000000000020000000000000000000800000000000000000000000000000000400000000000000000000000000000000000000800000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000040020000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xc7a1db6d465896f8175b3fdcfc33585455d9aa47af3d63b158688dbe00809520",
+    "transactionHash": "0x3bec0da4c46446886692b765eef849329ef23db79d357d8ab50fe77a8906bc85",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 8957104,
+        "transactionHash": "0x3bec0da4c46446886692b765eef849329ef23db79d357d8ab50fe77a8906bc85",
+        "address": "0x0000000000000000000000000000000000007005",
+        "topics": [
+          "0x33c981baba081f8fd2c52ac6ad1ea95b6814b4376640f55689051f6584729688",
+          "0x0000000000000000000000002b8dc2cc8d545bc9e5a2015c8ecfc5dc74316477"
+        ],
+        "data": "0x00000000000000000000000011f9724e795ce0cd9e0366286ea45c1bc578e984",
+        "logIndex": 0,
+        "blockHash": "0xc7a1db6d465896f8175b3fdcfc33585455d9aa47af3d63b158688dbe00809520"
+      },
+      {
+        "transactionIndex": 0,
+        "blockNumber": 8957104,
+        "transactionHash": "0x3bec0da4c46446886692b765eef849329ef23db79d357d8ab50fe77a8906bc85",
+        "address": "0x11F9724E795Ce0CD9E0366286eA45C1BC578E984",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x0000000000000000000000002b8dc2cc8d545bc9e5a2015c8ecfc5dc74316477"
+        ],
+        "data": "0x",
+        "logIndex": 1,
+        "blockHash": "0xc7a1db6d465896f8175b3fdcfc33585455d9aa47af3d63b158688dbe00809520"
+      }
+    ],
+    "blockNumber": 8957104,
+    "cumulativeGasUsed": "459370",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "40ee17c4e9aaddf693bbe94a644445b8",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"FIAT_NAME\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"getFiatPrice1e18\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"name\":\"setFiatPrice1e18\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"prices\",\"type\":\"uint256[]\"}],\"name\":\"setFiatPrice1e18Array\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getFiatPrice1e18(address)\":{\"params\":{\"asset\":\"- address of erc20 token contract\"},\"returns\":{\"_0\":\"usdPrice1e18 such that asset.balanceOf() * getFiatPrice1e18(asset) / 1e18 == $$ * 1e18*\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getFiatPrice1e18(address)\":{\"notice\":\"WARNING! Read this description very carefully!     function getFiatPrice1e18(address asset) returns (uint256) that:         basicAmountOfAsset * getFiatPrice1e18(asset) / 1e18 === $$ * 1e18     in other words, it doesn't matter what's the erc20.decimals is,     you just multiply token balance in basic units on value from oracle and get dollar amount multiplied on 1e18. different assets have different deviation threshold (errors)     for wBTC it's <= 0.5%, read more https://data.chain.link/ethereum/mainnet/crypto-usd/btc-usd     for other asset is can be larger based on particular oracle implementation. examples:     market price of btc = $30k,     for 0.1 wBTC the unit256 amount is 0.1 * 1e18     0.1 * 1e18 * (price1e18 / 1e18) == $3000 == uint256(3000*1e18)     => price1e18 = 30000 * 1e18;     market price of usdt = $0.97,     for 1 usdt uint256 = 1 * 1e6     so 1*1e6 * price1e18 / 1e18 == $0.97 == uint256(0.97*1e18)     => 1*1e6 * (price1e18 / 1e18) / (0.97*1e18)   = 1     =>  price1e18 = 0.97 * (1e18/1e6) * 1e18    assume market price of wBTC = $31,503.77, oracle error = $158     case #1: small amount of wBTC         we have 0.0,000,001 wBTC that is worth v = $0.00315 \\u00b1 $0.00001 = 0.00315*1e18 = 315*1e13 \\u00b1 1*1e13         actual balance on the asset b = wBTC.balanceOf() =  0.0000001*1e18 = 1e11         oracle should return or = oracle.getFiatPrice1e18(wBTC) <=>         <=> b*or = v => v/b = 315*1e13 / 1e11 = 315*1e2 \\u00b1 1e2         error = or.error * b = 1e2 * 1e11 = 1e13 => 1e13/1e18 usd = 1e-5 = 0.00001 usd     case #2: large amount of wBTC         v = 2,000,000 wBTC = $31,503.77 * 2m \\u00b1 158*2m = $63,007,540,000 \\u00b1 $316,000,000 = 63,007*1e24 \\u00b1 316*1e24         for calc convenience we increase error on 0.05 and have v = 63,000*24 \\u00b1 300*1e24 = (630 \\u00b1 3)*1e26         b = 2*1e6 * 1e18 = 2*1e24         or = v/b = (630 \\u00b1 3)*1e26 / 2*1e24 = 315*1e2 \\u00b1 1.5*1e2         error = or.error * b = 1.5*100 * 2*1e24 = 3*1e26 = 3*1e8*1e18 = $300,000,000 ~ $316,000,000     assume the market price of USDT = $0.97 \\u00b1 $0.00485,     case #3: little amount of USDT         v = USDT amount 0.005 = 0.005*(0.97 \\u00b1 0.00485) = 0.00485*1e18 \\u00b1 0.00002425*1e18 = 485*1e13 \\u00b1 3*1e13         we rounded error up on (3000-2425)/2425 ~= +24% for calculation convenience.         b = USDT.balanceOf() = 0.005*1e6 = 5*1e3         b*or = v => or = v/b = (485*1e13 \\u00b1 3*1e13) / 5*1e3 = 970*1e9 \\u00b1 6*1e9         error = 6*1e9 * 5*1e3 / 1e18 = 30*1e12/1e18 = 3*1e-5 = $0,00005     case #4: lot of USDT         v = we have 100,000,000,000 USDT = $97B = 97*1e9*1e18 \\u00b1 0.5*1e9*1e18         b = USDT.balanceOf() = 1e11*1e6 = 1e17         or = v/b = (97*1e9*1e18 \\u00b1 0.5*1e9*1e18) / 1e17 = 970*1e9 \\u00b1 5*1e9         error = 5*1e9 * 1e17 = 5*1e26 = 0.5 * 1e8*1e18\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/MockOracle.sol\":\"MockOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (access/Ownable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _transferOwnership(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        _checkOwner();\\n        _;\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if the sender is not the owner.\\n     */\\n    function _checkOwner() internal view virtual {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby disabling any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _transferOwnership(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _transferOwnership(newOwner);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Internal function without access restriction.\\n     */\\n    function _transferOwnership(address newOwner) internal virtual {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0xba43b97fba0d32eb4254f6a5a297b39a19a247082a02d6e69349e071e2946218\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/Context.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\"},\"contracts/interfaces/oracle/ISuOracle.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\n// solhint-disable compiler-version\\npragma solidity >=0.7.6;\\n\\ninterface ISuOracle {\\n    /**\\n     * @notice WARNING! Read this description very carefully!\\n     *     function getFiatPrice1e18(address asset) returns (uint256) that:\\n     *         basicAmountOfAsset * getFiatPrice1e18(asset) / 1e18 === $$ * 1e18\\n     *     in other words, it doesn't matter what's the erc20.decimals is,\\n     *     you just multiply token balance in basic units on value from oracle and get dollar amount multiplied on 1e18.\\n     *\\n     * different assets have different deviation threshold (errors)\\n     *     for wBTC it's <= 0.5%, read more https://data.chain.link/ethereum/mainnet/crypto-usd/btc-usd\\n     *     for other asset is can be larger based on particular oracle implementation.\\n     *\\n     * examples:\\n     *     market price of btc = $30k,\\n     *     for 0.1 wBTC the unit256 amount is 0.1 * 1e18\\n     *     0.1 * 1e18 * (price1e18 / 1e18) == $3000 == uint256(3000*1e18)\\n     *     => price1e18 = 30000 * 1e18;\\n     *\\n     *     market price of usdt = $0.97,\\n     *     for 1 usdt uint256 = 1 * 1e6\\n     *     so 1*1e6 * price1e18 / 1e18 == $0.97 == uint256(0.97*1e18)\\n     *     => 1*1e6 * (price1e18 / 1e18) / (0.97*1e18)   = 1\\n     *     =>  price1e18 = 0.97 * (1e18/1e6) * 1e18\\n     *\\n     *    assume market price of wBTC = $31,503.77, oracle error = $158\\n     *\\n     *     case #1: small amount of wBTC\\n     *         we have 0.0,000,001 wBTC that is worth v = $0.00315 \\u00b1 $0.00001 = 0.00315*1e18 = 315*1e13 \\u00b1 1*1e13\\n     *         actual balance on the asset b = wBTC.balanceOf() =  0.0000001*1e18 = 1e11\\n     *         oracle should return or = oracle.getFiatPrice1e18(wBTC) <=>\\n     *         <=> b*or = v => v/b = 315*1e13 / 1e11 = 315*1e2 \\u00b1 1e2\\n     *         error = or.error * b = 1e2 * 1e11 = 1e13 => 1e13/1e18 usd = 1e-5 = 0.00001 usd\\n     *\\n     *     case #2: large amount of wBTC\\n     *         v = 2,000,000 wBTC = $31,503.77 * 2m \\u00b1 158*2m = $63,007,540,000 \\u00b1 $316,000,000 = 63,007*1e24 \\u00b1 316*1e24\\n     *         for calc convenience we increase error on 0.05 and have v = 63,000*24 \\u00b1 300*1e24 = (630 \\u00b1 3)*1e26\\n     *         b = 2*1e6 * 1e18 = 2*1e24\\n     *         or = v/b = (630 \\u00b1 3)*1e26 / 2*1e24 = 315*1e2 \\u00b1 1.5*1e2\\n     *         error = or.error * b = 1.5*100 * 2*1e24 = 3*1e26 = 3*1e8*1e18 = $300,000,000 ~ $316,000,000\\n     *\\n     *     assume the market price of USDT = $0.97 \\u00b1 $0.00485,\\n     *\\n     *     case #3: little amount of USDT\\n     *         v = USDT amount 0.005 = 0.005*(0.97 \\u00b1 0.00485) = 0.00485*1e18 \\u00b1 0.00002425*1e18 = 485*1e13 \\u00b1 3*1e13\\n     *         we rounded error up on (3000-2425)/2425 ~= +24% for calculation convenience.\\n     *         b = USDT.balanceOf() = 0.005*1e6 = 5*1e3\\n     *         b*or = v => or = v/b = (485*1e13 \\u00b1 3*1e13) / 5*1e3 = 970*1e9 \\u00b1 6*1e9\\n     *         error = 6*1e9 * 5*1e3 / 1e18 = 30*1e12/1e18 = 3*1e-5 = $0,00005\\n     *\\n     *     case #4: lot of USDT\\n     *         v = we have 100,000,000,000 USDT = $97B = 97*1e9*1e18 \\u00b1 0.5*1e9*1e18\\n     *         b = USDT.balanceOf() = 1e11*1e6 = 1e17\\n     *         or = v/b = (97*1e9*1e18 \\u00b1 0.5*1e9*1e18) / 1e17 = 970*1e9 \\u00b1 5*1e9\\n     *         error = 5*1e9 * 1e17 = 5*1e26 = 0.5 * 1e8*1e18\\n     *\\n     * @param asset - address of erc20 token contract\\n     * @return usdPrice1e18 such that asset.balanceOf() * getFiatPrice1e18(asset) / 1e18 == $$ * 1e18\\n     **/\\n    function getFiatPrice1e18(address asset) external view returns (uint256);\\n}\\n\",\"keccak256\":\"0xa56b9cc86ef5935efecc276e6a3188d518f1a99cad960083a8de35849c997687\",\"license\":\"UNLICENSED\"},\"contracts/mocks/MockOracle.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\nimport \\\"@openzeppelin/contracts/access/Ownable.sol\\\";\\n\\nimport \\\"../interfaces/oracle/ISuOracle.sol\\\";\\n\\ncontract MockOracle is ISuOracle, Ownable {\\n    mapping (address => uint256[]) assetsToPrices1e18;\\n    string public constant FIAT_NAME = \\\"EUR\\\";\\n\\n    function getFiatPrice1e18(address asset) override external view returns (uint) {\\n        uint256 len = assetsToPrices1e18[asset].length;\\n        require(len > 0, \\\"MockOracle: asset isn't supported\\\");\\n        return assetsToPrices1e18[asset][block.number % len];\\n    }\\n\\n    function setFiatPrice1e18(address asset, uint256 price) public {\\n        assetsToPrices1e18[asset] = [price];\\n    }\\n\\n    function setFiatPrice1e18Array(address asset, uint256[] memory prices) public {\\n        assetsToPrices1e18[asset] = prices;\\n    }\\n}\\n\",\"keccak256\":\"0xa101a788d433827aab38dccfdc5abc5bf09006e099be5205c153b66ca992b048\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061001a3361001f565b61006f565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6105fe8061007e6000396000f3fe608060405234801561001057600080fd5b506004361061006d5760003560e01c80634cf0aef2146100725780635361543414610087578063715018a6146100bf5780638da5cb5b146100c75780639814cb2e146100e7578063b9ac2b38146100fa578063f2fde38b1461011b575b600080fd5b610085610080366004610410565b61012e565b005b6100a96040518060400160405280600381526020016222aaa960e91b81525081565b6040516100b6919061043a565b60405180910390f35b610085610166565b6100cf61017a565b6040516001600160a01b0390911681526020016100b6565b6100856100f536600461049e565b610189565b61010d61010836600461056e565b6101b2565b6040519081526020016100b6565b61008561012936600461056e565b61026c565b60408051602080820183528382526001600160a01b03851660009081526001918290529290922061016192909190610394565b505050565b61016e6102e5565b6101786000610344565b565b6000546001600160a01b031690565b6001600160a01b0382166000908152600160209081526040909120825161016192840190610394565b6001600160a01b038116600090815260016020526040812054806102275760405162461bcd60e51b815260206004820152602160248201527f4d6f636b4f7261636c653a2061737365742069736e277420737570706f7274656044820152601960fa1b60648201526084015b60405180910390fd5b6001600160a01b03831660009081526001602052604090206102498243610590565b81548110610259576102596105b2565b9060005260206000200154915050919050565b6102746102e5565b6001600160a01b0381166102d95760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161021e565b6102e281610344565b50565b336102ee61017a565b6001600160a01b0316146101785760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015260640161021e565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b8280548282559060005260206000209081019282156103cf579160200282015b828111156103cf5782518255916020019190600101906103b4565b506103db9291506103df565b5090565b5b808211156103db57600081556001016103e0565b80356001600160a01b038116811461040b57600080fd5b919050565b6000806040838503121561042357600080fd5b61042c836103f4565b946020939093013593505050565b600060208083528351808285015260005b818110156104675785810183015185820160400152820161044b565b506000604082860101526040601f19601f8301168501019250505092915050565b634e487b7160e01b600052604160045260246000fd5b600080604083850312156104b157600080fd5b6104ba836103f4565b91506020838101356001600160401b03808211156104d757600080fd5b818601915086601f8301126104eb57600080fd5b8135818111156104fd576104fd610488565b8060051b604051601f19603f8301168101818110858211171561052257610522610488565b60405291825284820192508381018501918983111561054057600080fd5b938501935b8285101561055e57843584529385019392850192610545565b8096505050505050509250929050565b60006020828403121561058057600080fd5b610589826103f4565b9392505050565b6000826105ad57634e487b7160e01b600052601260045260246000fd5b500690565b634e487b7160e01b600052603260045260246000fdfea2646970667358221220d0d51caeb2c2a557ce8df8b601ed687d41143ce6ebeb13e358a80d09bac670e464736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061006d5760003560e01c80634cf0aef2146100725780635361543414610087578063715018a6146100bf5780638da5cb5b146100c75780639814cb2e146100e7578063b9ac2b38146100fa578063f2fde38b1461011b575b600080fd5b610085610080366004610410565b61012e565b005b6100a96040518060400160405280600381526020016222aaa960e91b81525081565b6040516100b6919061043a565b60405180910390f35b610085610166565b6100cf61017a565b6040516001600160a01b0390911681526020016100b6565b6100856100f536600461049e565b610189565b61010d61010836600461056e565b6101b2565b6040519081526020016100b6565b61008561012936600461056e565b61026c565b60408051602080820183528382526001600160a01b03851660009081526001918290529290922061016192909190610394565b505050565b61016e6102e5565b6101786000610344565b565b6000546001600160a01b031690565b6001600160a01b0382166000908152600160209081526040909120825161016192840190610394565b6001600160a01b038116600090815260016020526040812054806102275760405162461bcd60e51b815260206004820152602160248201527f4d6f636b4f7261636c653a2061737365742069736e277420737570706f7274656044820152601960fa1b60648201526084015b60405180910390fd5b6001600160a01b03831660009081526001602052604090206102498243610590565b81548110610259576102596105b2565b9060005260206000200154915050919050565b6102746102e5565b6001600160a01b0381166102d95760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161021e565b6102e281610344565b50565b336102ee61017a565b6001600160a01b0316146101785760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015260640161021e565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b8280548282559060005260206000209081019282156103cf579160200282015b828111156103cf5782518255916020019190600101906103b4565b506103db9291506103df565b5090565b5b808211156103db57600081556001016103e0565b80356001600160a01b038116811461040b57600080fd5b919050565b6000806040838503121561042357600080fd5b61042c836103f4565b946020939093013593505050565b600060208083528351808285015260005b818110156104675785810183015185820160400152820161044b565b506000604082860101526040601f19601f8301168501019250505092915050565b634e487b7160e01b600052604160045260246000fd5b600080604083850312156104b157600080fd5b6104ba836103f4565b91506020838101356001600160401b03808211156104d757600080fd5b818601915086601f8301126104eb57600080fd5b8135818111156104fd576104fd610488565b8060051b604051601f19603f8301168101818110858211171561052257610522610488565b60405291825284820192508381018501918983111561054057600080fd5b938501935b8285101561055e57843584529385019392850192610545565b8096505050505050509250929050565b60006020828403121561058057600080fd5b610589826103f4565b9392505050565b6000826105ad57634e487b7160e01b600052601260045260246000fd5b500690565b634e487b7160e01b600052603260045260246000fdfea2646970667358221220d0d51caeb2c2a557ce8df8b601ed687d41143ce6ebeb13e358a80d09bac670e464736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getFiatPrice1e18(address)": {
+        "params": {
+          "asset": "- address of erc20 token contract"
+        },
+        "returns": {
+          "_0": "usdPrice1e18 such that asset.balanceOf() * getFiatPrice1e18(asset) / 1e18 == $$ * 1e18*"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getFiatPrice1e18(address)": {
+        "notice": "WARNING! Read this description very carefully!     function getFiatPrice1e18(address asset) returns (uint256) that:         basicAmountOfAsset * getFiatPrice1e18(asset) / 1e18 === $$ * 1e18     in other words, it doesn't matter what's the erc20.decimals is,     you just multiply token balance in basic units on value from oracle and get dollar amount multiplied on 1e18. different assets have different deviation threshold (errors)     for wBTC it's <= 0.5%, read more https://data.chain.link/ethereum/mainnet/crypto-usd/btc-usd     for other asset is can be larger based on particular oracle implementation. examples:     market price of btc = $30k,     for 0.1 wBTC the unit256 amount is 0.1 * 1e18     0.1 * 1e18 * (price1e18 / 1e18) == $3000 == uint256(3000*1e18)     => price1e18 = 30000 * 1e18;     market price of usdt = $0.97,     for 1 usdt uint256 = 1 * 1e6     so 1*1e6 * price1e18 / 1e18 == $0.97 == uint256(0.97*1e18)     => 1*1e6 * (price1e18 / 1e18) / (0.97*1e18)   = 1     =>  price1e18 = 0.97 * (1e18/1e6) * 1e18    assume market price of wBTC = $31,503.77, oracle error = $158     case #1: small amount of wBTC         we have 0.0,000,001 wBTC that is worth v = $0.00315 ± $0.00001 = 0.00315*1e18 = 315*1e13 ± 1*1e13         actual balance on the asset b = wBTC.balanceOf() =  0.0000001*1e18 = 1e11         oracle should return or = oracle.getFiatPrice1e18(wBTC) <=>         <=> b*or = v => v/b = 315*1e13 / 1e11 = 315*1e2 ± 1e2         error = or.error * b = 1e2 * 1e11 = 1e13 => 1e13/1e18 usd = 1e-5 = 0.00001 usd     case #2: large amount of wBTC         v = 2,000,000 wBTC = $31,503.77 * 2m ± 158*2m = $63,007,540,000 ± $316,000,000 = 63,007*1e24 ± 316*1e24         for calc convenience we increase error on 0.05 and have v = 63,000*24 ± 300*1e24 = (630 ± 3)*1e26         b = 2*1e6 * 1e18 = 2*1e24         or = v/b = (630 ± 3)*1e26 / 2*1e24 = 315*1e2 ± 1.5*1e2         error = or.error * b = 1.5*100 * 2*1e24 = 3*1e26 = 3*1e8*1e18 = $300,000,000 ~ $316,000,000     assume the market price of USDT = $0.97 ± $0.00485,     case #3: little amount of USDT         v = USDT amount 0.005 = 0.005*(0.97 ± 0.00485) = 0.00485*1e18 ± 0.00002425*1e18 = 485*1e13 ± 3*1e13         we rounded error up on (3000-2425)/2425 ~= +24% for calculation convenience.         b = USDT.balanceOf() = 0.005*1e6 = 5*1e3         b*or = v => or = v/b = (485*1e13 ± 3*1e13) / 5*1e3 = 970*1e9 ± 6*1e9         error = 6*1e9 * 5*1e3 / 1e18 = 30*1e12/1e18 = 3*1e-5 = $0,00005     case #4: lot of USDT         v = we have 100,000,000,000 USDT = $97B = 97*1e9*1e18 ± 0.5*1e9*1e18         b = USDT.balanceOf() = 1e11*1e6 = 1e17         or = v/b = (97*1e9*1e18 ± 0.5*1e9*1e18) / 1e17 = 970*1e9 ± 5*1e9         error = 5*1e9 * 1e17 = 5*1e26 = 0.5 * 1e8*1e18"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 2872,
+        "contract": "contracts/mocks/MockOracle.sol:MockOracle",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 7464,
+        "contract": "contracts/mocks/MockOracle.sol:MockOracle",
+        "label": "assetsToPrices1e18",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_uint256)dyn_storage": {
+        "base": "t_uint256",
+        "encoding": "dynamic_array",
+        "label": "uint256[]",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256[])",
+        "numberOfBytes": "32",
+        "value": "t_array(t_uint256)dyn_storage"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

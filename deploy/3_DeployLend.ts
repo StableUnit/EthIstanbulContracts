@@ -8,7 +8,6 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     const { deployments, getNamedAccounts } = hre;
     const { deployer } = await getNamedAccounts();
 
-    await deployments.deploy("MockSHIB", { from: deployer });
     const mockSHIB = (await ethers.getContract("MockSHIB")) as MockSHIB;
     const suOracleAggregator = (await ethers.getContract("SuOracleAggregator")) as SuOracleAggregator;
 
