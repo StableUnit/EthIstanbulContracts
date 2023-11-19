@@ -94,6 +94,11 @@ const config: HardhatUserConfig = {
             url: `https://sepolia.infura.io/v3/${INFURA_API_KEY}`,
             accounts: accountsTestnet,
         },
+        scroll: {
+            url: 'https://sepolia-rpc.scroll.io/',
+            chainId: 534351,
+            accounts: accountsTestnet,
+        },
         chiliz: {
             url: 'https://spicy-rpc.chiliz.com/',
             chainId: 88882,

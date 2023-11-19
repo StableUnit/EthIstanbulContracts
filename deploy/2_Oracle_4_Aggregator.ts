@@ -14,7 +14,8 @@ const func: DeployFunction = async () => {
     const suChronicleOracle = (await ethers.getContractOrNull("SuChronicleOracle")) as SuChronicleOracle | null;
 
     if (mockOracle) {
-        await suOracleAggregator.setOracleImplementation(ORACLE_IDS.MOCK_ORACLE, mockOracle.address);
+        const trx = await suOracleAggregator.setOracleImplementation(ORACLE_IDS.MOCK_ORACLE, mockOracle.address);
+        await trx.wait();
     }
     if (suChronicleOracle) {
         await suOracleAggregator.setOracleImplementation(ORACLE_IDS.CHRONICLE, suChronicleOracle.address);

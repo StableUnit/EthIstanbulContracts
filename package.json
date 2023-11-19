@@ -4,6 +4,8 @@
     "test": "npm run test:unit",
     "test:unit": "hardhat test test/unit-tests/*.test.ts",
     "deploy:chiliz": "hardhat deploy --tags DeployBaseContracts,MockOracle,OracleAggregator,DeployLend --network chiliz",
+    "verify:chiliz": "hardhat run ./scripts/verifyEtherscan.ts --network chiliz",
+    "deploy:scroll": "hardhat deploy --tags DeployBaseContracts,MockOracle,OracleAggregator,DeployLend --network scroll",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint --fix . --ext .js,.ts",
     "solhint": "solhint 'contracts/**/*.sol'",
