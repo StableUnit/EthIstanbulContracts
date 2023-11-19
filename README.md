@@ -1,7 +1,5 @@
 # MeowLend Protocol PoC
 
-// abstract and link for hackathon submission tba
-
 ## Deploys
 
 ### polygonZK addresses
@@ -69,6 +67,39 @@
 **accessControlSingleton** 0x708071C080E5ceb3cc0fb8fb4fD1034766eAef24
 
 **oracleAggregator** 0xDF2e747Ae22Ea80B5f6C8f8BA8FDC2FAAC996762
+
+## Developer Feedback
+
+### Chronicle:
+- Can’t find any example of oracle usage. For example what changed if we want to use Chronicle instead of Chainlink.
+- Not clear why we need to whitelist address to be able to call latestRoundData
+- It will be helpful to test if there was also all contract addresses on mainnet (not only Sepolia)
+- At first it was not so clear what is oracle and what is feed
+- Cool, that there is a good usage as Chainlink
+
+### Neon:
+- https://proxy.devnet.neonlabs.org/solana returns HeadersTimeoutError: Headers Timeout Error
+- https://devnet.neonevm.org RPC returns:
+  - Error HH110: Invalid JSON-RPC response received: <html>
+    <head><title>502 Bad Gateway</title></head>
+- Cool faucet
+
+### Base:
+- Very slow deploy on testnet. As in another chains we don't set gas, but 10 minutes after starting deploy it happens nothing
+- Mainnet deploy work fast
+- Faucet for Base Goerly didn't work, so we need to use Base Sepolia
+
+### Mantle
+- Only faucet with bridge works for me (https://faucet.testnet.mantle.xyz/), it's complex, but the bridge works fast, that was very good
+
+### Celo
+- Great faucet
+- It's bad that there is no injected in hardhat verifier, but it's cool that there is hardhat-celo. Not many chain do that.
+
+### PolygonZK
+- Mainnet works fast
+- Comfortable native bridge
+- It'll be nice if I can natively bridge matic from polygon to eth to polygonZK
 
 # Lending Protocol Specification
 

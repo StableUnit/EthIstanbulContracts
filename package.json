@@ -10,6 +10,7 @@
     "deploy:arbitrumOne": "hardhat deploy --tags DeployBaseContracts,MockOracle,OracleAggregator,DeployLend --network arbitrumOne",
     "deploy:celo": "hardhat deploy --tags DeployBaseContracts,MockOracle,OracleAggregator,DeployLend --network celo",
     "deploy:mantle": "hardhat deploy --tags DeployBaseContracts,MockOracle,OracleAggregator,DeployLend --network mantle",
+    "deploy:base": "hardhat deploy --tags DeployBaseContracts,MockOracle,OracleAggregator,DeployLend --network base",
     "verify:polygonZK": "hardhat run ./scripts/verifyEtherscan.ts --network polygonZK",
     "verify:chiliz": "hardhat run ./scripts/verifyEtherscan.ts --network chiliz",
     "verify:arbitrumOne": "hardhat run ./scripts/verifyEtherscan.ts --network arbitrumOne",

@@ -105,6 +105,7 @@ const config: HardhatUserConfig = {
             accounts: accountsTestnet,
         },
         neon: {
+            // url: 'https://proxy.devnet.neonlabs.org/solana',
             url: 'https://devnet.neonevm.org',
             chainId: 245022926,
             accounts: accountsTestnet,
@@ -127,6 +128,16 @@ const config: HardhatUserConfig = {
         mantle: {
             url: "https://rpc.testnet.mantle.xyz/",
             chainId: 5001,
+            accounts: accountsTestnet,
+        },
+        base: {
+            url: "https://base.llamarpc.com",
+            chainId: 8453,
+            accounts: accountsTestnet,
+        },
+        baseTestnet: {
+            url: "https://sepolia.base.org",
+            chainId: 84532,
             accounts: accountsTestnet,
         },
         goerli: {
