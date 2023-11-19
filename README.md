@@ -1,8 +1,10 @@
 # MeowLend Protocol PoC
 
+Lending protocol for memecoins https://ethglobal.com/showcase/meowlend-qgv91 
+
 ## Deploys
 
-### polygonZK addresses
+### polygonZK addresses (mainnet)
 **lend** 0x2a958EFb0dCd381c036675D564c08eB1909C38AC
 
 **oracle** 0x97eaA69F210426eaC3A391d6d4377cfe85443494
@@ -13,7 +15,7 @@
 
 **oracleAggregator** 0xDF2e747Ae22Ea80B5f6C8f8BA8FDC2FAAC996762
 
-### ArbitrumOne addresses
+### ArbitrumOne addresses (mainnet)
 **lend** 0x6b2cD9F0Eb10E377c718753575B319D8C38Ad33c
 
 **oracle** 0x519dD028CE0c4B20ae647619487C9512A845C64A
@@ -24,7 +26,7 @@
 
 **oracleAggregator** 0x79F93C0778c53Ce9dC306cC28aa145e2379d97e2
 
-### Celo addresses
+### Celo addresses (testnet)
 **lend** 0x2a958EFb0dCd381c036675D564c08eB1909C38AC
 
 **oracle** 0x97eaA69F210426eaC3A391d6d4377cfe85443494
@@ -35,7 +37,7 @@
 
 **oracleAggregator** 0xDF2e747Ae22Ea80B5f6C8f8BA8FDC2FAAC996762
 
-### Chiliz addresses
+### Chiliz addresses (testnet)
 **lend** 0x4274163619a3E4EA3C310a93C4B2f827F07FC5a4
 
 **oracle** 0x11F9724E795Ce0CD9E0366286eA45C1BC578E984
@@ -46,7 +48,7 @@
 
 **oracleAggregator** 0x7a1adc8340C00AA3Ecdd4Ecf36182Eed5D1BAb0B
 
-### Scroll addresses
+### Scroll addresses (testnet)
 **lend** 0x2a958EFb0dCd381c036675D564c08eB1909C38AC
 
 **oracle** 0x97eaA69F210426eaC3A391d6d4377cfe85443494
@@ -57,7 +59,7 @@
 
 **oracleAggregator** 0xDF2e747Ae22Ea80B5f6C8f8BA8FDC2FAAC996762
 
-### Mantle addresses
+### Mantle addresses (testnet)
 **lend** 0x2a958EFb0dCd381c036675D564c08eB1909C38AC
 
 **oracle** 0x97eaA69F210426eaC3A391d6d4377cfe85443494
@@ -125,6 +127,11 @@
 ### Arbitrum
 - Only tried on mainnet, but it works perfect and fast
 - It's very good that there is hardhat verification with Arbitrum mainnet and testnet
+# The product
+Meowlend: Dive into high-risk, high reward crypto lending with Meowlend. 
+Enjoy high APRs on deposits & easy 1-click borrowing. 
+User-friendly interface for hassle-free loans & repayments. 
+Isolated Risk for each memecoin.
 
 # Lending Protocol Specification
 
