@@ -22,7 +22,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     accounts.forEach((account) => console.log(account.address));
 });
 
-const { INFURA_API_KEY, ETHERSCAN_API_KEY, POLYGONSCAN_API_KEY } = process.env;
+const { INFURA_API_KEY, ETHERSCAN_API_KEY, POLYGONSCAN_API_KEY, CHILIZ_API_KEY } = process.env;
 
 const accountsTestnet = [
     process.env.PRIVATE_KEY_TESTNET_DEPLOYER,
@@ -94,6 +94,11 @@ const config: HardhatUserConfig = {
             url: `https://sepolia.infura.io/v3/${INFURA_API_KEY}`,
             accounts: accountsTestnet,
         },
+        chiliz: {
+            url: 'https://spicy-rpc.chiliz.com/',
+            chainId: 88882,
+            accounts: accountsTestnet,
+        },
         goerli: {
             url: `https://goerli.infura.io/v3/${INFURA_API_KEY}`,
             accounts: accountsTestnet,
@@ -126,6 +131,7 @@ const config: HardhatUserConfig = {
             goerli: ETHERSCAN_API_KEY,
             polygon: POLYGONSCAN_API_KEY,
             polygonMumbai: POLYGONSCAN_API_KEY,
+            chiliz: CHILIZ_API_KEY,
         },
     },
     mocha: {
