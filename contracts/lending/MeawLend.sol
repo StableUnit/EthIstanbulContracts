@@ -15,7 +15,7 @@ interface IUniswapV2Router02 {
     ) external payable returns (uint[] memory amounts);
 }
 
-contract LendingProtocol {
+contract MeawLend {
     using SafeMath for uint256;
 
     IERC20 public erc20Token;

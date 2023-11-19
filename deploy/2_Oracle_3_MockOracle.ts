@@ -9,10 +9,6 @@ const func: hardhatDeployTypes.DeployFunction = async (hre: typechainTypes.Hardh
     const { deployments, getNamedAccounts } = hre;
     const { deployer } = await getNamedAccounts();
     const networkName = await getNetworkInfo();
-    // We need MockOracle only for tests
-    if (networkName !== "localhost") {
-        return;
-    }
 
     const deployOptions = {
         from: deployer,
