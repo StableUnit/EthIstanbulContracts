@@ -22,7 +22,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     accounts.forEach((account) => console.log(account.address));
 });
 
-const { INFURA_API_KEY, ETHERSCAN_API_KEY, POLYGONSCAN_API_KEY, CHILIZ_API_KEY } = process.env;
+const { INFURA_API_KEY, ETHERSCAN_API_KEY, POLYGONSCAN_API_KEY, CHILIZ_API_KEY, ARBISCAN_API_KEY } = process.env;
 
 const accountsTestnet = [
     process.env.PRIVATE_KEY_TESTNET_DEPLOYER,
@@ -114,7 +114,7 @@ const config: HardhatUserConfig = {
             chainId: 1101,
             accounts: accountsTestnet,
         },
-        arbitrum: {
+        arbitrumOne: {
             url: 'https://arbitrum.llamarpc.com',
             chainId: 42161,
             accounts: accountsTestnet,
@@ -156,8 +156,7 @@ const config: HardhatUserConfig = {
             goerli: ETHERSCAN_API_KEY,
             polygon: POLYGONSCAN_API_KEY,
             polygonMumbai: POLYGONSCAN_API_KEY,
-            polygonZK: POLYGONSCAN_API_KEY,
-            chiliz: CHILIZ_API_KEY,
+            arbitrumOne: ARBISCAN_API_KEY,
         },
     },
     mocha: {
