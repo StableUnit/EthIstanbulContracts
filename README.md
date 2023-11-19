@@ -83,14 +83,17 @@
   - Error HH110: Invalid JSON-RPC response received: <html>
     <head><title>502 Bad Gateway</title></head>
 - Cool faucet
+- Contract verification isn't supported by default by hardhat
 
 ### Base:
 - Very slow deploy on testnet. As in another chains we don't set gas, but 10 minutes after starting deploy it happens nothing
 - Mainnet deploy work fast
 - Faucet for Base Goerly didn't work, so we need to use Base Sepolia
+- Contract verification isn't supported by default by hardhat
 
 ### Mantle
 - Only faucet with bridge works for me (https://faucet.testnet.mantle.xyz/), it's complex, but the bridge works fast, that was very good
+- Contract verification isn't supported by default by hardhat
 
 ### Celo
 - Great faucet
@@ -100,6 +103,17 @@
 - Mainnet works fast
 - Comfortable native bridge
 - It'll be nice if I can natively bridge matic from polygon to eth to polygonZK
+- Contract verification isn't supported by default by hardhat
+
+### Chiliz
+- Faucet: Not clear why we need to create a tweet, why not to do like in another faucets - x CHZ is free, if we only connect github/Alchemy/twitter => we get (n * x) CHZ
+- But it's good that there is a lot of mocked tokens available in testnet faucet
+- Deploy works fast
+- Contract verification isn't supported by default by hardhat
+
+### Arbitrum
+- Only tried on mainnet, but it works perfect and fast
+- It's very good that there is hardhat verification with Arbitrum mainnet and testnet
 
 # Lending Protocol Specification
 
